@@ -11,8 +11,8 @@ public class ControlLibererEtal {
 	}
 
 	public Etal isVendeur (String nomVendeur) {
-		Etal etal =controlTrouverEtalVendeur.trouverEtalVendeur(nomVendeur);
-		return etal;
+		return controlTrouverEtalVendeur.trouverEtalVendeur(nomVendeur);
+		
 
 	}
 
