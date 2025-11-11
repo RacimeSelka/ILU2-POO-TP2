@@ -33,14 +33,14 @@ public class BoundaryAcheterProduit {
 				String vendeur = vendeurs[choix];
 				System.out.println(nomAcheteur + " se déplace jusqu'à l'étal du vendeur " + vendeur + "\n");
 				int quantiteAcheter = Clavier
-						.entrerEntier("bonjour " + nomAcheteur + "Combien de " + produit + " voulez vous acheter ?\n");
-				int quantiteVendu = controlAcheterProduit.acheterProduit(nomAcheteur, vendeur, quantiteAcheter);
+						.entrerEntier("bonjour " + nomAcheteur + " Combien de " + produit + " voulez vous acheter ?\n");
+				int quantiteVendu = controlAcheterProduit.acheterProduit(vendeur, quantiteAcheter);
 				if (quantiteVendu == 0) {
 					System.out.println(nomAcheteur + " veut acheter " + quantiteAcheter + " " + produit
 							+ ",malheureusement il n'y en a plus.\n");
 				} else if (quantiteAcheter > quantiteVendu) {
 					System.out.println(nomAcheteur + " veut acheter " + quantiteAcheter + " " + produit
-							+ ",malheureusement bonemine n'en a que " + quantiteVendu + ".\n");
+							+ ",malheureusement bonemine n'en a que " + quantiteVendu + "."+nomAcheteur+" achete tout le stock de "+vendeur+".\n");
 				} else {
 					System.out.println(
 							nomAcheteur + " achete " + quantiteAcheter + " de " + produit + " à " + vendeur + "\n");
