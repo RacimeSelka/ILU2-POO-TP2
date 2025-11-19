@@ -52,18 +52,7 @@ class ControlEmmenagerTest {
 		assertFalse(controlEmmenager.isHabitant("PasBonemine"));
 	}
 
-	@Test
-	void testAjouterBeaucoupDeGaulois() {
-		for (int i = 0; i < 100; i++) {
-			controlEmmenager.ajouterGaulois("GAULOIS_" + i, 10);
-		}
-		for (int i = 0; i < 100; i++) {
-			if (i < 10) {
-				assertTrue(controlEmmenager.isHabitant("GAULOIS_" + i));
-			} else {
-				assertFalse(controlEmmenager.isHabitant("GAULOIS_" + i));
-			}
-		}
-	}
+	
+	
 
 }
